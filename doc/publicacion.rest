@@ -1,0 +1,30 @@
+
+### Listar todas
+GET http://127.0.0.1:3000/api/publicaciones
+
+### Obtener por ID
+GET http://127.0.0.1:3000/api/publicaciones/1
+
+### Crear
+POST http://127.0.0.1:3000/api/publicaciones
+Content-Type: application/json
+
+{
+  "titulo": "Vendo laptop",
+  "descripcion": "Laptop en buen estado, 8GB RAM.",
+  "precio": 500,
+  "imagenUrl": "https://ejemplo.com/laptop.jpg",
+  "categoriaId": 1
+}
+
+### Actualizar
+PUT http://127.0.0.1:3000/api/publicaciones/1
+Content-Type: application/json
+
+{
+  "precio": 450,
+  "descripcion": "Laptop en buen estado, precio negociable."
+}
+
+### Eliminar
+DELETE http://127.0.0.1:3000/api/publicaciones/1

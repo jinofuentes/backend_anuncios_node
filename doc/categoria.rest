@@ -1,0 +1,25 @@
+### Listar todas
+GET http://127.0.0.1:3000/api/categorias
+
+###  Obtener por ID
+GET http://127.0.0.1:3000/api/categorias/1
+
+### Crear
+POST http://127.0.0.1:3000/api/categorias
+Content-Type: application/json
+
+{
+  "nombre": "Electrónica",
+  "descripcion": "Gadgets y tecnología"
+}
+
+### Actualizar
+PUT http://127.0.0.1:3000/api/categorias/1
+Content-Type: application/json
+
+{
+  "nombre": "Tecnología"
+}
+
+### Eliminar
+DELETE http://127.0.0.1:3000/api/categorias/1
